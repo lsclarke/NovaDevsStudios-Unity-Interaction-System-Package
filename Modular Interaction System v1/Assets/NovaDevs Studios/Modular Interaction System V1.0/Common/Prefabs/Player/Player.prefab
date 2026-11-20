@@ -179,7 +179,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5138389566041845562}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.86602515, z: -0, w: 0.50000054}
+  m_LocalRotation: {x: 0, y: 0.86602545, z: 0, w: 0.49999994}
   m_LocalPosition: {x: -2.01, y: 1.2, z: 13.81}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
@@ -255,9 +255,9 @@ MonoBehaviour:
     m_ActionName: 'Player/Attack[/Mouse/leftButton,/Keyboard/enter]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6388568459737850993}
-        m_TargetAssemblyTypeName: PlayerInteractionSystem, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PlayerInteract, Assembly-CSharp
+        m_MethodName: OnInteract
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -385,8 +385,7 @@ GameObject:
   - component: {fileID: 5017886440249185437}
   - component: {fileID: 2488585626170090333}
   - component: {fileID: 8941255262044218090}
-  - component: {fileID: 8351685763851832813}
-  - component: {fileID: 5119575758332547495}
+  - component: {fileID: 1955988330969170406}
   m_Layer: 7
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -530,7 +529,7 @@ MonoBehaviour:
   mouseSenY: 200
   orientation: {fileID: 1582099514696040925}
   playerObj: {fileID: 4087137908278683009}
---- !u!114 &8351685763851832813
+--- !u!114 &1955988330969170406
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -539,32 +538,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6388568459737850993}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cb1de85d3af26c458f1d43a4dc42960, type: 3}
+  m_Script: {fileID: 11500000, guid: 3755adfb215b1444c8e91ad6a223320f, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteract
-  canInteract: 0
-  isInteracting: 0
-  DetectThisLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  contactDistance: 3
---- !u!114 &5119575758332547495
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6388568459737850993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: babacb224b0c3b5418d2ad6f33618b44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ItemInspectorTutorial
-  isInspecting: 0
-  itemToInspect: {fileID: 0}
-  rotationSpeed: 120
-  inspectorHolderTransform: {fileID: 8374705776902380078}
-  playerCamera: {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteractionSystem
 --- !u!1 &8173942560803037950
 GameObject:
   m_ObjectHideFlags: 0
